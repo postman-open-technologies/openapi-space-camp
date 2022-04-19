@@ -1,0 +1,26 @@
+openapi: "3.0.3"
+
+info:
+  title: Postmanaut Directory
+  description: |
+    ![OpenAPI Logo](https://avatars3.githubusercontent.com/u/16343502?v=3&s=100)
+
+    A demo _API_ to **discover** the **_[OpenAPI Specification](https://www.openapis.org/)_**.
+  version: "1.0"
+
+servers:
+  - description: The base path for all resources 
+    url: /postmanaut-directory/v1 
+
+paths:
+  /postmanauts:
+    get:
+      summary: Search postmanauts
+      description: You can either get the full list of postmanauts or filter them on their name
+      responses:
+        200:
+          description: Found postmanauts
+          content:
+            application/json:
+              schema:
+                type: object
