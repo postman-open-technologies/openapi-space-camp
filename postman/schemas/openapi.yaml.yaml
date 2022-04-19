@@ -1,0 +1,46 @@
+openapi: "3.0.3"
+
+info:
+  title: OpenAPI Space Camp
+  version: "1.0"
+
+paths:
+  /postmanauts:
+    get:
+      summary: Search Postmanauts
+      parameters:
+        - name: name
+          in: query
+          schema:
+            type: string
+        - name: hobby
+          in: query
+          schema:
+            type: string 
+      responses:
+        200:
+          description: Found Postmanauts
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data:
+                    type: array
+                    items:
+                      type: object
+                      required:
+                        - id
+                        - name
+                      properties:
+                        id:
+                          type: integer
+                          minimum: 0
+                        name:
+                          type: string
+                        twitter:
+                          type: string
+                        hobbies:
+                          type: array
+                          items:
+                            type: string

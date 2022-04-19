@@ -1,0 +1,90 @@
+{
+    "info": {
+        "_postman_id": "71d5b654-f289-4ff6-b019-e170e3658cbb",
+        "name": "OpenAPI Space Camp 1.0",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+        {
+            "name": "Search Postmanauts",
+            "id": "9eadf4a1-8756-470b-b0f8-891f811f2141",
+            "request": {
+                "method": "GET",
+                "header": [
+                    {
+                        "key": "Accept",
+                        "value": "application/json"
+                    }
+                ],
+                "url": {
+                    "raw": "{{baseUrl}}/postmanauts?name=ea magna irure eiusmod&hobby=ea magna irure eiusmod",
+                    "host": [
+                        "{{baseUrl}}"
+                    ],
+                    "path": [
+                        "postmanauts"
+                    ],
+                    "query": [
+                        {
+                            "key": "name",
+                            "value": "ea magna irure eiusmod"
+                        },
+                        {
+                            "key": "hobby",
+                            "value": "ea magna irure eiusmod"
+                        }
+                    ]
+                }
+            },
+            "response": [
+                {
+                    "id": "90999ec3-cc5e-4bfe-8f5f-4b4928df0d6e",
+                    "name": "Found Postmanauts",
+                    "originalRequest": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                            "raw": "{{baseUrl}}/postmanauts?name=ea magna irure eiusmod&hobby=ea magna irure eiusmod",
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "path": [
+                                "postmanauts"
+                            ],
+                            "query": [
+                                {
+                                    "key": "name",
+                                    "value": "ea magna irure eiusmod"
+                                },
+                                {
+                                    "key": "hobby",
+                                    "value": "ea magna irure eiusmod"
+                                }
+                            ]
+                        }
+                    },
+                    "status": "OK",
+                    "code": 200,
+                    "_postman_previewlanguage": "json",
+                    "header": [
+                        {
+                            "key": "Content-Type",
+                            "value": "application/json"
+                        }
+                    ],
+                    "cookie": [],
+                    "responseTime": null,
+                    "body": "{\n  \"data\": [\n    {\n      \"id\": 17500455,\n      \"name\": \"Duis \",\n      \"twitter\": \"voluptate officia Except\",\n      \"hobbies\": [\n        \"d\",\n        \"laboris adipisicing est tem\"\n      ]\n    },\n    {\n      \"id\": 38742494,\n      \"name\": \"irure labore sit dolore\",\n      \"twitter\": \"magna Excepteur\",\n      \"hobbies\": [\n        \"minim quis sint dolor\",\n        \"do commodo laborum minim\"\n      ]\n    }\n  ]\n}"
+                }
+            ]
+        }
+    ],
+    "variable": [
+        {
+            "id": "61f80fba-83a9-4cfd-8e26-17bc43409914",
+            "key": "baseUrl",
+            "value": "/",
+            "type": "string"
+        }
+    ]
+}
