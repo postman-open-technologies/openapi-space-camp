@@ -1,3 +1,4 @@
+# Adding search filters (parameters) to Search Postmanauts
 openapi: "3.0.3"
 
 info:

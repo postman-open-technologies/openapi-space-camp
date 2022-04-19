@@ -1,3 +1,4 @@
+# Optimizing error responses with a reusable Errors schema
 openapi: "3.0.3"
 
 info:

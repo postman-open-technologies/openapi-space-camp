@@ -1,3 +1,4 @@
+# Initiating the API description
 # OpenAPI's specification version, not the API's one!
 openapi: "3.0.3"
 

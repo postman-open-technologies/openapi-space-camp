@@ -1,3 +1,4 @@
+# Indicating what happens when no postmanaut is found
 openapi: "3.0.3"
 
 info:

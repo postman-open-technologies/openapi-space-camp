@@ -1,3 +1,4 @@
+# Handling 401 Unauthorized errors on Search Postmanauts
 openapi: "3.0.3"
 
 info:

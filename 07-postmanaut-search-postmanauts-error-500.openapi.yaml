@@ -1,3 +1,4 @@
+# Copy/pasting 401 to add 500 error response
 openapi: "3.0.3"
 
 info:
